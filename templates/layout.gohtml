@@ -1,0 +1,10 @@
+{{define "layout"}}
+{{template "header" .}}
+<h1>Hello {{.Name}}</h1>
+{{template "footer" .}}
+{{end}}
+
+// tidak akan dieksekusi karna tdk dipanggil di handler
+{{define "test"}}
+<h1>Tester</h1>
+{{end}}
